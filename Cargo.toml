@@ -1,0 +1,16 @@
+[package]
+name = "eframe_quads_and_circles"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cgmath = "0.18.0"
+# default features for eframe but without glow
+eframe = { version = "0.23.0", default-features = false, features = [
+    "accesskit",
+    "default_fonts",
+    "wayland",
+    "wgpu",
+    "x11",
+] }
+encase = { version = "0.6.1", features = ["cgmath"] }
